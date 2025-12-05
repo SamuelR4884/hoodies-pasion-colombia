@@ -1,0 +1,379 @@
+/* ----------- VARIABLES ----------- */
+:root {
+  --bg: #f2f5f7;
+  --text: #222;
+  --accent: #ff4d4f;
+  --card-bg: #ffffff;
+
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* ----------- ESTILOS BASE ----------- */
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: var(--bg);
+  color: var(--text);
+}
+
+/* enlaces */
+a {
+  color: var(--accent);
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: underline;
+}
+
+/* ----------- HEADER ----------- */
+
+.site-header {
+  background: #fff;
+  padding: 16px 20px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+
+.header-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brand {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--accent);
+}
+
+.nav-links {
+  display: flex;
+  gap: 20px;  /* <-- Aquí se separan los enlaces */
+}
+
+.nav-links a {
+  font-weight: 500;
+  color: var(--text);
+  text-decoration: none;
+}
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* ----------- TARJETAS ----------- */
+.card {
+  background: var(--card-bg);
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  margin-bottom: 20px;
+}
+
+/* GRID DE PRODUCTOS RESPONSIVE */
+.products-grid {
+  display: grid;
+  gap: 20px;
+  grid-template-columns: repeat(3, 1fr); /* Escritorio */
+}
+
+/* TABLET: dos columnas */
+@media (max-width: 900px) {
+  .products-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+/* CELULAR: una columna */
+@media (max-width: 600px) {
+  .products-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.product-img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* botones */
+button, .btn {
+  background: var(--accent);
+  color: #fff;
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+button:hover, .btn:hover {
+  opacity: 0.85;
+}
+
+/* ------ BOTÓN FLOTANTE WHATSAPP ------ */
+.floating-wa {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  width: 56px;
+  height: 56px;
+  background: var(--accent);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+  z-index: 1000;
+  transition: transform .15s ease, box-shadow .15s ease, opacity .15s ease;
+  text-decoration: none;
+}
+.floating-wa:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 22px rgba(0,0,0,0.18);
+  opacity: 0.98;
+}
+.floating-wa svg {
+  width: 24px;
+  height: 24px;
+  fill: white;
+  display: block;
+}
+
+/* Ajustes para pantallas pequeñas */
+@media (max-width: 480px) {
+  .floating-wa {
+    right: 14px;
+    bottom: 14px;
+    width: 50px;
+    height: 50px;
+  }
+}
+
+/* TARJETA RESPONSIVE */
+.card {
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+}
+
+/* Ajustes en pantallas muy pequeñas */
+@media (max-width: 480px) {
+  .card img {
+    height: 200px !important; 
+  }
+}
+
+/* ===== Footer ===== */
+.site-footer {
+  background: #111;
+  color: white;
+  padding: 40px 20px 20px;
+  margin-top: 40px;
+  border-top: 3px solid var(--accent);
+}
+
+.footer-inner {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: auto;
+}
+
+.footer-section h3,
+.footer-section h4 {
+  margin-bottom: 10px;
+  color: var(--accent);
+}
+
+.footer-section a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+/* ===== PRODUCT CARDS ===== */
+
+.products-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+  gap: 22px;
+  padding: 20px 0;
+}
+
+.product-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: 0.25s ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.18);
+}
+
+.product-image {
+  width: 100%;
+  height: 210px;
+  object-fit: cover;
+}
+
+.product-info {
+  padding: 16px;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.product-title {
+  font-size: 18px;
+  margin: 0 0 6px 0;
+}
+
+.product-description {
+  font-size: 14px;
+  opacity: 0.8;
+  margin-bottom: 10px;
+}
+
+.product-price {
+  font-size: 20px;
+  margin-bottom: 14px;
+  color: var(--accent);
+}
+
+.product-button {
+  background: var(--accent);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  text-align: center;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.product-button:hover {
+  background: #d63333;
+
+}
+.product-link {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+  flex: 1;
+}
+
+/* ===================== HOME PAGE ===================== */
+
+.home-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  margin-bottom: 40px;
+}
+
+/* ----- Banner principal ----- */
+
+.home-banner {
+  position: relative;
+  width: 100%;
+  height: 380px;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.25);
+}
+
+.home-banner-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  filter: brightness(65%);
+}
+
+/* Texto sobre el banner */
+.home-banner-text {
+  position: absolute;
+  top: 50%;
+  left: 40px;
+  transform: translateY(-50%);
+  color: white;
+}
+
+.home-banner-text h1 {
+  font-size: 42px;
+  margin: 0 0 10px 0;
+}
+
+.home-banner-text p {
+  font-size: 20px;
+  opacity: 0.9;
+  margin-bottom: 20px;
+}
+
+.home-button {
+  display: inline-block;
+  padding: 12px 20px;
+  background: var(--accent);
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 18px;
+  transition: 0.2s;
+}
+
+.home-button:hover {
+  background: #d63333;
+}
+
+/* ----- Sección de pilares ----- */
+
+.home-features {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 26px;
+  padding: 10px;
+}
+
+.feature-card {
+  background: white;
+  padding: 22px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+  transition: 0.25s ease;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+}
+
+.feature-icon {
+  font-size: 40px;
+  margin-bottom: 12px;
+}
