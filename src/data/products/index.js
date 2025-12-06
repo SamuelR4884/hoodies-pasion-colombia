@@ -5,18 +5,23 @@ import MotoPalabras from "./motoPalabras";
 import MariposasMangas from "./mariposasMangas";
 import PersonalizableNombre from "./personalizableNombre";
 import BTSFloral from "./btsFloral";
+import FitnessPulso from "./fitnessPulso";
+import MinionsDos from "./minionsDos";
+import HowardsQuidditch from "./howardsQuidditch";
 
 
 
 
 export default [
-  jake,
-  godOfWarGym,
+  Jake,
+  GodOfWarGym,
   BusoSencillo,
   MotoPalabras,
+  FerreteriaRPR,
   MariposasMangas,
   PersonalizableNombre,
-  BTSFloral
-
-
+  BTSFloral,
+  FitnessPulso,
+  MinionsDos,
+  HowardsQuidditch
 ];
