@@ -17,11 +17,9 @@ export default [
   godOfWarGym,
   BusoSencillo,
   MotoPalabras,
-  FerreteriaRPR,
   MariposasMangas,
   PersonalizableNombre,
-  BTSFloral,
-  FitnessPulso,
-  MinionsDos,
-  HowardsQuidditch
+  BTSFloral
+
+
 ];
