@@ -8,6 +8,9 @@ import BTSFloral from "./btsFloral";
 import FitnessPulso from "./fitnessPulso";
 import MinionsDos from "./minionsDos";
 import HowardsQuidditch from "./howardsQuidditch";
+import HongoRanita from "./hongoRanita";
+import Simpsons from "./simpsons";
+import GatitoAferrado from "./gatitoAferrado";
 
 
 
@@ -22,7 +25,10 @@ export default [
   BTSFloral,
   FitnessPulso,
   MinionsDos,
-  HowardsQuidditch
+  HowardsQuidditch,
+  HongoRanita,
+  Simpsons,
+  GatitoAferrado
 
 
 ];
