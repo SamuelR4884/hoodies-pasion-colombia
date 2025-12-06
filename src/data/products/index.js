@@ -1,9 +1,7 @@
-import H001 from "./H001";
-import H002 from "./H002";
-import H003 from "./H003";
+import jake from "./jake";
+import godOfWarGym from "./godOfWarGym";
 
 export default [
-  H001,
-  H002,
-  H003
+  jake,
+  godOfWarGym
 ];
