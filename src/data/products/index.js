@@ -19,7 +19,10 @@ export default [
   MotoPalabras,
   MariposasMangas,
   PersonalizableNombre,
-  BTSFloral
+  BTSFloral,
+  FitnessPulso,
+  MinionsDos,
+  HowardsQuidditch
 
 
 ];
