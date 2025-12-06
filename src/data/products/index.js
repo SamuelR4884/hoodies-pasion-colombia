@@ -13,8 +13,8 @@ import HowardsQuidditch from "./howardsQuidditch";
 
 
 export default [
-  Jake,
-  GodOfWarGym,
+  jake,
+  godOfWarGym,
   BusoSencillo,
   MotoPalabras,
   FerreteriaRPR,
