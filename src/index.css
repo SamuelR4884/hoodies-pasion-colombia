@@ -493,3 +493,56 @@ button:hover, .btn:hover {
 .how-buy-card h3 {
   margin-bottom: 10px;
 }
+
+/* ===== HAMBURGUESA ===== */
+
+.hamburger {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  color: var(--text);
+}
+
+/* ===== RESPONSIVE HEADER ===== */
+
+@media (max-width: 768px) {
+
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 75px;
+    right: 20px;
+
+    background: white;
+
+    flex-direction: column;
+    align-items: flex-start;
+
+    padding: 20px;
+
+    border-radius: 12px;
+
+    box-shadow: 0 4px 14px rgba(0,0,0,0.15);
+
+    display: none;
+
+    min-width: 220px;
+
+    z-index: 1000;
+  }
+
+  .nav-links.open {
+    display: flex;
+  }
+
+  .nav-links a {
+    width: 100%;
+    padding: 8px 0;
+  }
+
+}
