@@ -8,6 +8,7 @@ import Catalog from "./pages/Catalog";
 import ProductDetail from "./pages/ProductDetail"; // asegúrate de que existe
 import FloatingWhatsApp from "./components/FloatingWhatsApp";
 import Footer from "./components/Footer";
+import FloatingInstagram from "./components/FloatingInstagram";
 
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
 
       {/* Botón flotante global (se muestra en todas las páginas) */}
       <FloatingWhatsApp />
+      <FloatingInstagram />
     </div>
   );
 }

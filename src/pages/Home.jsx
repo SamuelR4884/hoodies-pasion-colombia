@@ -7,8 +7,6 @@ export default function Home() {
 
       {/* ===================== BANNER PRINCIPAL ===================== */}
       <div className="home-banner">
-        {/* PON AQUÍ TU IMAGEN DE BANNER PRINCIPAL (1920x600 recomendado) */}
-        {/* Ejemplo: /images/banner-principal.jpg */}
         <img 
           src="/images/baner-principal.jpg" 
           alt="Banner principal"
@@ -18,6 +16,7 @@ export default function Home() {
         <div className="home-banner-text">
           <h1>Hoodies Pasión Colombia</h1>
           <p>Calidad, identidad y pasión en cada diseño.</p>
+
           <Link to="/catalog" className="home-button">
             Ver catálogo
           </Link>
@@ -26,37 +25,62 @@ export default function Home() {
 
       {/* ===================== PILARES DE LA MARCA ===================== */}
       <div className="home-features">
-        
+
         <div className="feature-card">
-          {/* ÍCONO 1 (puedes cambiarlo luego por una imagen si quieres) */}
           <div className="feature-icon">🔥</div>
+
           <h3>Materiales de Calidad</h3>
+
           <p>
-            Algodón perchado, suave, cálido y resistente. Listo para el día a día.
+            Algodón perchado, suave, cálido y resistente.
+            Listo para el día a día.
           </p>
         </div>
 
         <div className="feature-card">
-          {/* ÍCONO 2 */}
           <div className="feature-icon">👨‍👩‍👧</div>
+
           <h3>Empresa Familiar</h3>
+
           <p>
-            Diseños hechos con pasión y dedicación. Nuestra filosofía: insistir, persistir y nunca desistir.
+            Diseños hechos con pasión y dedicación.
+            Nuestra filosofía: insistir, persistir y nunca desistir.
           </p>
         </div>
 
         <div className="feature-card">
-          {/* ÍCONO 3 */}
           <div className="feature-icon">🚚</div>
-          <h3>Entregas en Bogotá</h3>
-          <p>
-            Actualmente realizamos entregas principalmente en Bogotá, pero nuestro objetivo 
-            es expandirnos a todo el país muy pronto.
-          </p>
 
+          <h3>Entregas en Bogotá</h3>
+
+          <p>
+            Actualmente realizamos entregas principalmente en Bogotá,
+            pero nuestro objetivo es expandirnos a todo el país muy pronto.
+          </p>
         </div>
 
       </div>
+
+      {/* ===================== INSTAGRAM ===================== */}
+
+      <div className="instagram-section">
+        <h2>📸 Síguenos en Instagram</h2>
+
+        <p>
+          Descubre nuevos diseños, hoodies personalizados
+          y más contenido exclusivo.
+        </p>
+
+        <a
+          href="https://www.instagram.com/hoodiespasioncolombia?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+          target="_blank"
+          rel="noreferrer"
+          className="instagram-button"
+        >
+          Ver Instagram
+        </a>
+      </div>
+
     </div>
   );
 }

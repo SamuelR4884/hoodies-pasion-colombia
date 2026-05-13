@@ -377,3 +377,29 @@ button:hover, .btn:hover {
   font-size: 40px;
   margin-bottom: 12px;
 }
+
+/* ===== INSTAGRAM FLOTANTE ===== */
+
+.floating-instagram {
+  position: fixed;
+  bottom: 90px; /* arriba del WhatsApp */
+  right: 20px;
+  width: 55px;
+  height: 55px;
+  background: #E1306C;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 28px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  z-index: 1000;
+  transition: 0.25s ease;
+}
+
+.floating-instagram:hover {
+  transform: scale(1.08);
+  background: #c91d5b;
+}
