@@ -60,6 +60,59 @@ export default function Home() {
         </div>
 
       </div>
+      
+      {/* ===================== COMO COMPRAR ===================== */}
+
+<div className="how-buy-section">
+
+  <h2>🛒 ¿Cómo comprar?</h2>
+
+  <div className="how-buy-grid">
+
+    <div className="how-buy-card">
+      <div className="how-buy-number">1</div>
+
+      <h3>Escoge tu hoodie</h3>
+
+      <p>
+        Explora nuestro catálogo y encuentra el diseño que más te guste.
+      </p>
+    </div>
+
+    <div className="how-buy-card">
+      <div className="how-buy-number">2</div>
+
+      <h3>Escríbenos por WhatsApp</h3>
+
+      <p>
+        Te ayudaremos con tallas, colores y personalización.
+      </p>
+    </div>
+
+    <div className="how-buy-card">
+      <div className="how-buy-number">3</div>
+
+      <h3>Personaliza tu pedido</h3>
+
+      <p>
+        Algunos hoodies permiten agregar nombres y elegir colores.
+      </p>
+    </div>
+
+    <div className="how-buy-card">
+      <div className="how-buy-number">4</div>
+
+      <h3>Coordinamos la entrega</h3>
+
+      <p>
+        Actualmente realizamos entregas principalmente en Bogotá.
+      </p>
+    </div>
+
+  </div>
+
+</div>
+
 
       {/* ===================== INSTAGRAM ===================== */}
 
