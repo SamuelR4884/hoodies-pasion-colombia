@@ -2,7 +2,7 @@
 import React from "react";
 
 export default function FloatingWhatsApp() {
-  const phone = "573238077800"; // número en formato E.164 sin "+"
+  const phone = "573229685782"; // número en formato E.164 sin "+"
   const text = encodeURIComponent("Hola, quiero más info sobre sus hoodies.");
   const waLink = `https://wa.me/${phone}?text=${text}`;
 
