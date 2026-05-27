@@ -12,7 +12,7 @@ export default function Footer() {
 
         <div className="footer-section">
           <h4>Contacto</h4>
-          <p>WhatsApp: <a href="https://wa.me/573238077800" target="_blank" rel="noreferrer">323 807 7800</a></p>
+          <p>WhatsApp: <a href="https://wa.me/573229685782" target="_blank" rel="noreferrer">322 968 5782</a></p>
           <p>Correo: hoodiespasioncolombia@gmail.com</p>
         </div>
 

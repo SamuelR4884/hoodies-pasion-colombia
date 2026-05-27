@@ -47,7 +47,7 @@ export default function Header() {
           </Link>
 
           <a
-            href="https://wa.me/573238077800?text=Hola%20Hoodies%20Pasi%C3%B3n%20Colombia"
+            href="https://wa.me/573229685782?text=Hola%20Hoodies%20Pasi%C3%B3n%20Colombia"
             target="_blank"
             rel="noreferrer"
             onClick={() => setMenuOpen(false)}

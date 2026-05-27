@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 
 export default function ProductCard({ product }) {
-  const phone = "573238077800";
+  const phone = "573229685782";
   const text = encodeURIComponent(`Hola, quiero info del buso: ${product.title}`);
   const waLink = `https://wa.me/${phone}?text=${text}`;
 

@@ -10,7 +10,7 @@ export default function ProductDetail() {
     return <h2>Producto no encontrado</h2>;
   }
 
-  const phone = "573238077800";
+  const phone = "573229685782";
   const text = encodeURIComponent(`Hola, quiero info del buso: ${product.title}`);
   const waLink = `https://wa.me/${phone}?text=${text}`;
 

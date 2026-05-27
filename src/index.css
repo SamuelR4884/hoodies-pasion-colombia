@@ -546,3 +546,43 @@ button:hover, .btn:hover {
   }
 
 }
+
+/* ===== BUSCADOR CATÁLOGO ===== */
+
+.catalog-search-container {
+  margin: 25px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-search {
+  width: 100%;
+  max-width: 500px;
+
+  padding: 14px 18px;
+
+  border-radius: 12px;
+  border: 2px solid #ddd;
+
+  font-size: 16px;
+
+  outline: none;
+
+  transition: 0.25s ease;
+
+  background: white;
+
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.catalog-search:focus {
+  border-color: var(--accent);
+  box-shadow: 0 4px 18px rgba(255,77,79,0.2);
+}
+
+.no-results {
+  text-align: center;
+  font-size: 18px;
+  opacity: 0.75;
+  margin-top: 20px;
+}
